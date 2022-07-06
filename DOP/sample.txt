@@ -1,0 +1,16 @@
+q [Hypothesis]
+- p [Assumption]
+p > q [by >I, using {1,2}, cancel 2]
+
+- p [Assumption]
+-- ~q [Assumption]
+-- ~p [Assumption]
+- ~~q [by ~I, using {1,2,3}, cancel 2]
+- q [by ~E, using {8}]
+p > q [by >I, using {1,5}, cancel 1]
+
+- p > q [Assumption]
+- p [Hypothesis]
+- q [by >E, using {1,2}]
+- ~q [Hypothesis]
+~(p>q) [by ~I, using {1,3,4}, cancel 1]
